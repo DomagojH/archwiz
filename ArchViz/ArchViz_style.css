@@ -1,0 +1,306 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin-bottom: -100px;
+  zoom: 100%;
+}
+
+body {
+  background-color: #0d0f1b;
+}
+
+@media (min-width:1050px) {
+  .leftMenu {
+    padding-left: 20px;
+    padding-top: 5px;
+    width: 20%;
+    float: left;
+    display: table;  
+  }
+}
+
+@media (min-width:1050px) {
+  .centerMenu {
+    width: 60%;
+    float: left;
+    display: table;
+  }
+}
+
+@media (min-width:1050px) {
+  .rightMenu {
+    width: 20%;
+    float: left;
+    display: table;
+  }
+}
+
+@media (max-width:1050px) {
+  .leftMenu {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+  }
+}
+
+@media (max-width:1050px) {
+  .centerMenu {
+    width: 100%;
+  }
+}
+
+@media (max-width:1050px) {
+  .rightMenu {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width:1050px) {
+  .projectSelect {
+    padding: 5px;
+  }
+}
+
+hr {
+  border-width: 0px;
+  height: 1px;
+  background-color: #7f8a8a;
+}
+
+.mainText {
+  color: #bcc2c2;
+  font-family: Roboto-Light;
+  font-size: 30px;
+  margin: 0px 0px 0px 0px;
+}
+
+.subText {
+  color: #bcc2c2;
+  font-family: Roboto-Light;
+  font-size: 20px;
+}
+
+select {
+  background-color: transparent;
+  color: #bcc2c2;
+  border-radius: 3px;
+  font-family: Roboto-Light;
+  font-size: 17px;
+  padding: 2px;
+  width: 220px;
+}
+
+@media (min-width:1314px) {
+  select {
+      float: right;
+  }
+}
+
+@media (max-width:1314px min-width:1050px) {
+  select {
+      float: left;
+  }
+}
+
+@media (max-width:1050px) {
+  select {
+      margin-left: 10px;
+  }
+}
+
+.footerText {
+  color: #bcc2c2;
+  font-family: Roboto-Light;
+  font-size: 12px;
+  text-align: right;
+  margin-top: -25px;
+}
+
+@media (min-width:1050px) {
+  .rightOptions_first {
+    margin-top: 62px;
+    margin-right: 20px;
+    float: right;
+    display: block;
+    clear: both;
+    background: transparent;
+    border: 1px solid #bcc2c2;
+    border-radius: 5px;
+    padding: 5px 10px 7px 10px;
+    min-width: 225px;
+    text-align: right;
+  }
+}
+
+@media (min-width:1050px) {
+  .rightOptions_second {
+    margin-top: 10px;
+    margin-right: 20px;
+    float: right;
+    display: block;
+    clear: both;
+    background: transparent;
+    border: 1px solid #bcc2c2;
+    border-radius: 5px;
+    padding: 5px 10px 7px 10px;
+    min-width: 225px;
+    text-align: right;
+  }
+}
+
+@media (min-width:1050px) {
+  .rightOptions_third {
+    margin-top: 10px;
+    margin-right: 20px;
+    float: right;
+    display: block;
+    clear: both;
+    background: transparent;
+    border: 1px solid #bcc2c2;
+    border-radius: 5px;
+    padding: 5px 10px 7px 10px;
+    min-width: 225px;
+    text-align: right;
+  }
+}
+
+@media (max-width:1050px) {
+  .rightOptions_first {
+    margin-top: 30px;
+    float: right;
+    display: block;
+    clear: both;
+    background: transparent;
+    border: 1px solid #bcc2c2;
+    border-radius: 5px;
+    padding: 5px 10px 7px 10px;
+    min-width: 225px;
+    text-align: right;
+  }
+}
+
+@media (max-width:1050px) {
+  .rightOptions_second {
+    margin-top: 10px;
+    float: right;
+    display: block;
+    clear: both;
+    background: transparent;
+    border: 1px solid #bcc2c2;
+    border-radius: 5px;
+    padding: 5px 10px 7px 10px;
+    min-width: 225px;
+    text-align: right;
+  }
+}
+
+@media (max-width:1050px) {
+  .rightOptions_third {
+    margin-top: 10px;
+    float: right;
+    display: block;
+    clear: both;
+    background: transparent;
+    border: 1px solid #bcc2c2;
+    border-radius: 5px;
+    padding: 5px 10px 7px 10px;
+    min-width: 225px;
+    text-align: right;
+  }
+}
+
+.rightMenuText {
+  color: #bcc2c2;
+  font-family: Roboto-Light;
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+.rightOptions > button {
+  margin-left: 5px;
+}
+
+.canvas_add{
+  max-width: 600px;
+  max-height: 750px;
+  margin: auto;
+  margin-top: 62px;
+  outline: 1px solid;
+  outline-color: #7f8a8a;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.textUI {
+  color: #bcc2c2;
+  z-index: 1;
+  font-family: Roboto-Light;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+.enabledButton {
+  background: #6b7a87;
+  color: #0d0f1b;
+  border: 1px solid #bcc2c2;
+  border-radius: 2px;
+  font-family: Roboto-Light;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.enabledButton:hover {
+  background: #7f8a8a;
+}
+
+.disabledButton {
+  background: transparent;
+  color: #bcc2c2;
+  border: 1px solid #bcc2c2;
+  border-radius: 2px;
+  font-family: Roboto-Light;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.disabledButton:hover {
+  background: #7f8a8a;
+}
+
+@media (min-height:800px) {
+  footer {
+    width: 100%;
+    margin-top: 25px;
+    display: inline-block;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+  }
+}
+
+@media (max-height:800px) {
+  footer {
+    width: 100%;
+    margin-top: 25px;
+    display: inline-block;
+    bottom: 0;
+  }
+}
+
+.tip {
+  color: #abb0b0;
+  font-family: Roboto-Light;
+  font-size: 12px;
+  text-align: left;
+  margin-top: 17px;
+  margin-left: 30px;
+}
+
+.footerText {
+  margin-right: 30px;
+}
