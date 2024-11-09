@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/p5.js"></script>
+		<link rel="stylesheet" href="ArchViz_style.css">
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div class="leftMenu">
+			<p class="mainText">ArchViz Tool</p>
+			<hr class="topHr">
+			<div class="projectSelect">
+				<span class="subText">Project:</span>
+  				<select id="projectSelection" onchange="newSelect();">
+    				<option value="0" selected="selected">Empty scene</option>
+    				<option value="1">Apartment Building</option>
+    			</select>
+    		</div>
+		</div>
+		<div class="centerMenu">
+			<script type="text/javascript" src="ArchViz_script.js"></script>
+			<div class="canvas_add" id="canvas_add"></div>
+			<img id="loading" src="textures/loading.gif" style="width:75px; height:75px; display:block; margin-left:auto; margin-right:auto; margin-top: 300px;">
+		</div>
+		<div class="rightMenu" id="rightMenuUI">
+			<div class="rightOptions_first">
+				<span class="rightMenuText">Textures</span>
+				<button type="button" class="disabledButton" onclick = "t_0()" id="t_0">/</button>
+				<button type="button" class="enabledButton" onclick = "t_1()" id="t_1">O</button> 
+			</div>
+			<div class="rightOptions_second">
+				<span class="rightMenuText">UI</span>
+				<button type="button" class="disabledButton" onclick = "u_0()" id="u_0">/</button>
+				<button type="button" class="enabledButton" onclick = "u_1()" id="u_1">O</button> 
+			</div>
+			<div class="rightOptions_third">
+				<span class="rightMenuText">Wireframe</span>
+				<button type="button" class="enabledButton" onclick = "w_0()" id="w_0">/</button>
+				<button type="button" class="disabledButton" onclick = "w_1()" id="w_1">O</button> 
+			</div>
+		</div>
+	</body>
+	<footer>
+		<hr>
+		<div>
+			<p class="tip" id="UI">Tip: Use Left Mouse Button in the central area to rotate, Right Mouse Button to pan, and Mouse Wheel to zoom in/out!</p>
+		</div>
+		<div>
+			<p class="footerText">2023, TVZ, Napredni Web Dizajn</p>
+		</div>
+	</footer>
+</html>
+

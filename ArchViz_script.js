@@ -114,6 +114,14 @@ function preload() {
   b3_r_2 = loadModel("models/3_R_2.obj");
 
   font=loadFont("fonts/Roboto-Light.ttf");
+
+  if (project != 1) {
+    document.getElementById("rightMenuUI").style.visibility = "hidden";
+    const uiList = document.querySelectorAll('[id=UI]');
+      for (let i = 0; i < uiList.length; i++) {
+    uiList[i].style.visibility = "hidden";
+    } 
+  }
 }
 
 function makeButtons() {
@@ -356,6 +364,7 @@ function setup() {
     uiList[i].style.visibility = "hidden";
     } 
   }
+  document.getElementById("loading").style.visibility = "hidden";
 }
 
 function draw() {
