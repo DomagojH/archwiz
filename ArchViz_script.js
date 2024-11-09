@@ -82,6 +82,15 @@ let textures = true;
 let project = 0;
 
 function preload() {
+
+  if (project != 1) {
+    document.getElementById("rightMenuUI").style.visibility = "hidden";
+    const uiList = document.querySelectorAll('[id=UI]');
+      for (let i = 0; i < uiList.length; i++) {
+    uiList[i].style.visibility = "hidden";
+    } 
+  }
+
 	b1_m_1 = loadModel("models/1_M_1.obj");
 	img1_m_1 = loadImage('textures/1_M_1.png');
 	b1_m_2 = loadModel("models/1_M_2.obj");
@@ -114,14 +123,6 @@ function preload() {
   b3_r_2 = loadModel("models/3_R_2.obj");
 
   font=loadFont("fonts/Roboto-Light.ttf");
-
-  if (project != 1) {
-    document.getElementById("rightMenuUI").style.visibility = "hidden";
-    const uiList = document.querySelectorAll('[id=UI]');
-      for (let i = 0; i < uiList.length; i++) {
-    uiList[i].style.visibility = "hidden";
-    } 
-  }
 }
 
 function makeButtons() {
